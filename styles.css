@@ -1,0 +1,96 @@
+body {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+  }
+  
+  header {
+    background-color: #8B0000; /* Rojo oscuro para el header */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #8B0000;
+    opacity: 10%;
+  
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #ffffff; /* Títulos en rojo oscuro */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .slider img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px #8B0000;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .proyecto img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #8B0000;
+  }
+  
+
+  .chibi {
+    max-width: 200px;
+  }
+  
+  .chibi img {
+    width: 100%;
+    max-width: 200px;
+     /* quitamos sombra */
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px #8B0000;
+  }
+  
+  .chibi img:hover {
+    transform: scale(1.05);
+    
+  }
+  
+  .chibi.izquierda {
+    align-self: flex-start;
+  }
+  
+  .chibi.derecha {
+    float: right;
+  }
+    
