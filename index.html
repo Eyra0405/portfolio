@@ -4,66 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Celia</title>
+  <link rel="icon" href="assets/favicon.png"/>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
   <header>
+  <section id="header">
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a id="inicio" href="#inicio">Inicio</a></li>
+        <li><a id="sobremi" href="#sobremi">Sobre mí</a></li>
+        <li><a id="proyectos" href="#proyectos">Proyectos</a></li>
+        <li><a id="contacto" href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+  </section>
   </header>
-
-  <section id="inicio" class="inicio">
-    <div class="slider">
-      <img src="assets/proyecto1.png" alt="Proyecto 1"/>
-      <!-- Puedes añadir más imágenes aquí -->
+  <section id="inicio">
+    <div class="gallery-container">
+      <div class="gallery-text">
+        <h1>Hola! soy Celia ✨</h1>
+        <h2>Desarrolladora junior</h2>
+        <p>En proceso de ser FullStack web </p>
+        <a href="#proyectos" class="gallery-btn">Ver proyectos</a>
+      </div>
+        <figure class="gallery-item">
+            <img src="assets/image1.jpg" alt="Imagen 1">
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/image2.jpg" alt="Imagen 2">
+        </figure>
+        <figure class="gallery-item">
+            <img src="assets/image3.jpg" alt="Imagen 3">
+        </figure>
     </div>
-    <h1>¡Hola! Soy Celia, una desarrolladora web full stack.</h1>
-  </section>
-
-  <section id="sobremi">
-    <h2>Sobre mí</h2>
-    <p>Soy una desarrolladora apasionada por crear experiencias web bonitas y funcionales.</p>
-    <h3>Tecnologías:</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>MongoDB</li>
-      <li>Python</li>
-    </ul>
-    <div class="chibi izquierda">
-        <img src="assets/IMG_7097.png" alt="Celia chibi 1">
-      </div>
-  </section>
-
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="grid">
-      <div class="proyecto">
-        <div class="chibi derecha">
-            <img src="assets/IMG_7095.png" alt="Celia chibi 2">
-          </div>
-        <h4>Nombre del Proyecto</h4>
-        <p>Descripción breve del proyecto.</p>
-      </div>
-      <!-- Agrega más proyectos en cuadricula -->
+    <nav class="gallery-navigation">
+        <button class="nav-button prev-button"><span>&#60;</span></button>
+        <button class="nav-button next-button"><span>&#62;</span></button>
+    </nav>
+</section>
+<section id="sobre-mi">
+  <div class="container">
+    <div class="bio">
+      <h2>Sobre mí</h2>
+      <p>Hola, soy Celia, una apasionada del desarrollo web. Me encanta aprender nuevas tecnologías y crear proyectos desafiantes. Actualmente, estoy especializándome en desarrollo Full Stack y siempre busco mejorar mis habilidades. Aquí te dejo algunas de las tecnologías que manejo:</p>
     </div>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="chibi izquierda">
-        <img src="assets/IMG_7094.png" alt="Celia chibi 3">
+    <div class="tecnologias">
+      <h3>Tecnologías que manejo:</h3>
+      <div class="tecnologia-lista">
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/java.png" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/typescript.png" alt="TypeScript" />
+          <p>TypeScript</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/nodejs.png" alt="Node.js" />
+          <p>Node.js</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/react.png" alt="React.js" />
+          <p>React.js</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/tailwindcss.png" alt="TailwindCSS" />
+          <p>TailwindCSS</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/angular.png" alt="Angular" />
+          <p>Angular</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="SQL" />
+          <p>SQL</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/oracle.png" alt="Oracle" />
+          <p>Oracle</p>
+        </div>
+        <div class="tecnologia">
+          <img src="https://img.icons8.com/ios-filled/50/000000/mongodb.png" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
       </div>
-    <p>¡Estoy abierta a nuevas oportunidades! Escríbeme a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-  </section>
+    </div>
+    <div class="redes-sociales">
+      <h3>Conéctate conmigo:</h3>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/celia-urcola-rosel-16a095171/" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Eyra0405" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
+        </a>
+        <a href="https://twitter.com/tu-usuario" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

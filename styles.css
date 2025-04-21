@@ -1,3 +1,4 @@
+
 body {
     font-family: "Special Gothic Expanded One", sans-serif;
     margin: 0;
@@ -13,84 +14,223 @@ body {
     top: 0;
     z-index: 1000;
   }
-  
   nav ul {
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
+    justify-content: center; /* Alineación centrada */   
+}
+nav ul li {
+  margin: 0 15px; /* Espacio entre cada enlace */
+}
+  nav ul li a {
     text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
 
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #8B0000;
-    opacity: 10%;
-  
-    padding: 0.2rem 0.5rem;
+figure {
+  margin:0;
+}
+
+#inicio {
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+     /* Ajusta esta altura según sea necesario */
+}
+.gallery-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  z-index: 10; /* Más alto que las imágenes */
+  font-family: "Special Gothic Expanded One", sans-serif;
+  padding: 0 20px;
+
+}
+
+.gallery-text h1 {
+  font-size: 40px;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.gallery-text h2 {
+  font-size: 30px;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.gallery-text p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.gallery-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #8B0000; /* El mismo rojo oscuro del header */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.gallery-btn:hover {
+  background-color: #a10000;
+  transform: scale(1.05);
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+}
+
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Filtro oscuro */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+
+/* Navegación de la galería */
+.gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(0,0,0, .3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     border-radius: 5px;
-  }
-  
-  section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  h1, h2, h3, h4 {
-    color: #ffffff; /* Títulos en rojo oscuro */
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .slider img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 0 15px #8B0000;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  .proyecto img {
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px #8B0000;
-  }
-  
+}
+.nav-button > span {
+  font-size: 30px;
+}
+#sobre-mi {
+  padding: 50px 20px;
+  background-color: #121212;
+  color: #fff;
+}
 
-  .chibi {
-    max-width: 200px;
-  }
-  
-  .chibi img {
-    width: 100%;
-    max-width: 200px;
-     /* quitamos sombra */
-    transition: transform 0.3s ease;
-    box-shadow: 0 0 10px #8B0000;
-  }
-  
-  .chibi img:hover {
-    transform: scale(1.05);
-    
-  }
-  
-  .chibi.izquierda {
-    align-self: flex-start;
-  }
-  
-  .chibi.derecha {
-    float: right;
-  }
-    
+#sobre-mi .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.tecnologias {
+  text-align: center;
+}
+
+.tecnologias h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.tecnologia-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tecnologia {
+  text-align: center;
+  width: 120px;
+}
+
+.tecnologia img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1); /* Aplica el filtro para invertir los colores y hacer los iconos blancos */
+}
+
+.redes-sociales {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.redes-sociales h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  filter: invert(1); /* También los íconos de las redes sociales serán blancos */
+}
+
+.redes a img:hover {
+  transform: scale(1.1);
+}
+
