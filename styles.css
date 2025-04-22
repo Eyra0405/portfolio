@@ -43,6 +43,20 @@ figure {
 section {
   scroll-margin-top: 80px; /* o lo que mida tu header */
 }
+.tituloconfondo {
+  display: inline-block;
+  background-color: #8B0000;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #inicio {
     max-width: 900px;
@@ -173,6 +187,7 @@ section {
   margin: 0 auto;
 }
 
+
 .bio h2 {
   font-size: 36px;
 
@@ -189,6 +204,12 @@ section {
   max-width: 600px;
   margin-right: 200px;
 }
+.categoria:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #8B0000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .categorias-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columnas */
@@ -203,6 +224,7 @@ section {
   box-shadow: 0 4px 10px #8B0000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .tecnologias {
   text-align: center;
 }
@@ -337,6 +359,7 @@ section {
     transform: translateY(0);
   }
 }
+
 .proyectos-container {
   display: flex;
   flex-direction: column;
