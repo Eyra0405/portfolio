@@ -1,4 +1,3 @@
-// script.js
 let current = 0;
 const items = document.querySelectorAll('.gallery-item');
 

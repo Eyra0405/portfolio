@@ -1,14 +1,16 @@
-
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: "Special Gothic Expanded One", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #000;
+    color: #fff; 
   }
   
   header {
-    background-color: #8B0000; /* Rojo oscuro para el header */
+    background-color: #8B0000; 
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -17,10 +19,10 @@ body {
   nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Alineación centrada */   
+    justify-content: center;    
 }
 nav ul li {
-  margin: 0 15px; /* Espacio entre cada enlace */
+  margin: 0 15px; 
 }
   nav ul li a {
     text-decoration: none;
@@ -30,7 +32,7 @@ nav ul li {
     transition: background-color 0.3s;
 }
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #b61b1b;
   border-radius: 5px;
 }
 
@@ -44,7 +46,7 @@ figure {
     overflow: hidden;
     position: relative;
     height: 500px;
-     /* Ajusta esta altura según sea necesario */
+     
 }
 .gallery-text {
   position: absolute;
@@ -55,7 +57,7 @@ figure {
   justify-content: center;
   align-content: center;
   color: white;
-  z-index: 10; /* Más alto que las imágenes */
+  z-index: 10; 
   font-family: "Special Gothic Expanded One", sans-serif;
   padding: 0 20px;
 
@@ -80,7 +82,7 @@ figure {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 25px;
-  background-color: #8B0000; /* El mismo rojo oscuro del header */
+  background-color: #8B0000; 
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -90,14 +92,14 @@ figure {
 }
 
 .gallery-btn:hover {
-  background-color: #a10000;
+  background-color: #8B0000;
   transform: scale(1.05);
 }
 
 .gallery-container {
     position: relative;
     width: 100%;
-    height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+    height: 100%;
 }
 
 .gallery-item {
@@ -105,7 +107,7 @@ figure {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+    height: 100%; 
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -134,7 +136,7 @@ figure {
     opacity: 1;
 }
 
-/* Navegación de la galería */
+
 .gallery-navigation {
     display: flex;
     justify-content: space-between;
@@ -146,7 +148,7 @@ figure {
 }
 
 .nav-button {
-    background-color: rgba(0,0,0, .3);
+    background-color: #8B0000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -172,12 +174,44 @@ figure {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 200px;
 }
 
 .bio p {
-  font-size: 18px;
+  text-align: justify;
   line-height: 1.6;
-  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-right: 200px;
+}
+.grid-tecnologias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 40px;
+  padding: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid-tecnologias {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+  }
+}
+
+.categoria {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #8B0000;
 }
 
 .tecnologias {
@@ -187,6 +221,8 @@ figure {
 .tecnologias h3 {
   font-size: 28px;
   margin-bottom: 20px;
+  background-color: #8B0000;
+  border-radius: 5px;
 }
 
 .tecnologia-lista {
@@ -195,16 +231,31 @@ figure {
   justify-content: center;
   gap: 20px;
 }
-
+.categoria h4 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 1.2rem; 
+  font-weight: 600; /* hace que el texto se vea más nítido */
+  color: #ffffff; /* gris oscuro, más suave que el negro */
+  margin-bottom: 0.8rem;
+  background-color:#8B0000;
+  border-radius: 5px;
+ 
+}
 .tecnologia {
   text-align: center;
   width: 120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tecnologia:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #8B0000;
+  border-radius: 10px;
 }
 
 .tecnologia img {
   width: 50px;
   height: 50px;
-  filter: invert(1); /* Aplica el filtro para invertir los colores y hacer los iconos blancos */
+  filter: invert(1); 
 }
 
 .redes-sociales {
@@ -227,10 +278,83 @@ figure {
   width: 50px;
   height: 50px;
   transition: transform 0.3s;
-  filter: invert(1); /* También los íconos de las redes sociales serán blancos */
+  filter: invert(1); 
 }
 
 .redes a img:hover {
   transform: scale(1.1);
 }
 
+.sobre-mi-contenido{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.imagen-sobremi img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+    margin-left: 100px;
+}
+.imagen-sobremi img:hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.1);
+}
+.botonCV {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #8B0000; 
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.botonCV:hover {
+  background-color: #8B0000;
+  transform: scale(1.05);
+}
+
+.botonrepo{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #8B0000; 
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.botonrepo:hover{
+  background-color: #8B0000;
+  transform: scale(1.05);
+}
+
+.webTickets{
+  width: 700px;
+  height: 300px;
+  
+  display: block;
+  position: relative;
+  z-index: 0;
+  margin-left: 300px;
+}
+.musicPlayer{
+  width: 400px;
+  height: 300px;
+ 
+  display: block;
+  position: relative;
+  z-index: 0;
+  margin-left: 450px;
+}
