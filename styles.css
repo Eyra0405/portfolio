@@ -8,12 +8,12 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #0e0d0d;
     color: #fff; 
   }
   
   header {
-    background-color: #8B0000; 
+    background-color: #1f0606; 
     padding: 1.5px;
     position: sticky;
     top: 0;
@@ -235,7 +235,7 @@ section {
   padding: 20px;
 }
 .categorias-grid .categoria {
-  background-color: #000000; 
+  background-color: #0e0d0d;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px #8B0000;
