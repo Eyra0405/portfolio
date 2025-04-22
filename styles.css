@@ -349,12 +349,20 @@ section {
   background-color: #8B0000;
   transform: scale(1.05);
 }
-.tituloconfondo {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.titulo{
+  display: inline-block;
+  background-color: #8B0000;
   color: white;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+  font-size: 48px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 0 auto;
+}
+.titulo-proyectos-contenedor {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .botonrepo {
@@ -393,7 +401,17 @@ section {
   gap: 50px;
   animation: fadeSlideUp 1s ease-out both;
 }
-
+.imagenproyectos img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+  margin-right: -100px;
+}
+.imagen-proyectos img:hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.1);
+  }
 .proyecto1, .proyecto2 {
   width: 320px;
   background-color: #000000;
