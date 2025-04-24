@@ -14,7 +14,15 @@
   .proyecto1:hover img, .proyecto2:hover img {
     transform: scale(1.03);
   }
-.imagen-proyectos img:hover{
+  .imagenproyectos img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imagenproyectos img:hover {
     transform: scale(1.1);
-    }
+  }
+  

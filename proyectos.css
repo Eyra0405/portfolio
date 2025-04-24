@@ -8,11 +8,18 @@
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     margin: 0 auto;
+    
   }
   .titulo-proyectos-contenedor {
-    text-align: center;
+    display: flex;
+    justify-content: flex-start; /* los junta al inicio */
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 50px;
+    padding: 0 2rem;
+    gap: 1rem; /* controla la distancia entre ellos */
   }
+  
   
   .botonrepo {
     display: inline-block;
@@ -50,12 +57,7 @@
     gap: 50px;
     animation: fadeSlideUp 1s ease-out both;
   }
-  .imagenproyectos img {
-    width: 300px;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-  }
+
  
   .proyecto1, .proyecto2 {
     width: 320px;
