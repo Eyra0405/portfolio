@@ -48,7 +48,7 @@
     padding: 20px;
   }
   .categorias-grid .categoria {
-    background-color: #000000; 
+    background-color: #181717; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px #8B0000;
@@ -140,21 +140,4 @@
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
     margin-left: 100px;
-  }
-  .botonCV {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #8B0000; 
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 30px;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  }
-  
-  .botonCV:hover {
-    background-color: #8B0000;
-    transform: scale(1.05);
   }

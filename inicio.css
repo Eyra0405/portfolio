@@ -1,10 +1,18 @@
 header {
-    background-color: #8B0000; 
+    background-color: #460101; 
     padding: 1.5px;
     position: sticky;
     top: 0;
     z-index: 1000;
   }
+  .botonCV {
+    background-color: #8B0000; 
+    color: white;
+    border-radius: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
   nav ul {
     list-style-type: none;
     display: flex;
