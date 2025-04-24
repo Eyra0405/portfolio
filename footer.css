@@ -1,0 +1,28 @@
+footer {
+    background-color: #460101;
+    padding: 5px 0;
+    height: auto;
+    min-height: 0;
+    text-align: center;
+  }
+  
+  footer .redes-sociales {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .redes {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer .redes a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  
+  footer .redes img {
+    width: 50px;
+    height: 50px;
+  }
+  

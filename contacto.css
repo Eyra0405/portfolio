@@ -1,17 +1,53 @@
+#contacto {
+  padding: 50px 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.contacto-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* para que en móviles se apile */
+  gap: 40px;
+}
+
+.imagen-contacto {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+}
+
+.imagen-contacto img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-contacto img:hover {
+  transform: scale(1.1);
+}
+
+.contacto-contenido {
+  flex: 2;
+  max-width: 500px;
+}
+
 .botonMail {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #8B0000; 
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 30px;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  }
-  
-  .botonMail:hover {
-    background-color: #8B0000;
-    transform: scale(1.05);
-  }
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #8B0000;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.botonMail:hover {
+  background-color: #8B0000;
+  transform: scale(1.05);
+}

@@ -9,6 +9,16 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+  .imagen-sobremi img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+    margin-left: 100px;
+  }
+  .imagen-sobremi img:hover {
+    transform: scale(1.1);
+  }
   
   
   .bio h2 {
@@ -134,10 +144,4 @@
     margin-top: 2rem;
   }
   
-  .imagen-sobremi img {
-    width: 300px;
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-    margin-left: 100px;
-  }
+  
