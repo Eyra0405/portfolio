@@ -14,24 +14,24 @@
   <link rel="stylesheet" href="imagenes.css" />
   <link rel="stylesheet" href="footer.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-  <section id="header">
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="assets/CeliaCV.pdf" download class="botonCV">Descargar CV</a></li>
-      </ul>
-    </nav>
-  </section>
+  <header class="fade-in">
+    <section id="header" class="fade-in">
+      <nav class="fade-in">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobremi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="assets/CeliaCV.pdf" download class="botonCV">Descargar CV</a></li>
+        </ul>
+      </nav>
+    </section>
   </header>
+
   <section id="inicio">
     <div class="gallery-container">
       <div class="gallery-text">
@@ -40,171 +40,117 @@
         <p>En proceso de ser FullStack web </p>
         <a href="#proyectos" class="gallery-btn">Ver proyectos</a>
       </div>
-        <figure class="gallery-item">
-            <img src="assets/ApiJira.PNG" alt="Imagen 1">
-        </figure>
-        <figure class="gallery-item">
-            <img src="assets/musicPlayer.PNG" alt="Imagen 2">
-        </figure>
-        <figure class="gallery-item">
-            <img src="assets/image3.jpg" alt="Imagen 3">
-        </figure>
+  
+      <figure class="gallery-item">
+        <img src="assets/ApiJira.PNG" alt="Imagen 1">
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/musicPlayer.PNG" alt="Imagen 2">
+      </figure>
+      <figure class="gallery-item">
+        <img src="assets/image3.jpg" alt="Imagen 3">
+      </figure>
     </div>
+  
     <nav class="gallery-navigation">
-        <button class="nav-button prev-button"><span>&#60;</span></button>
-        <button class="nav-button next-button"><span>&#62;</span></button>
+      <button class="nav-button prev-button"><span>&#60;</span></button>
+      <button class="nav-button next-button"><span>&#62;</span></button>
     </nav>
-</section>
-<section id="sobremi">
-  <div class="container">
-    <div class="sobre-mi-contenido">
-    <div class="imagen-sobremi">
-      <img src="assets/imagensobremi.webp" alt="Foto de Celia" />
-    </div>
-    <div class="bio">
-      <h2 class="tituloconfondo">Sobre mí</h2>
-      <p class="descripcion">¡Hola! Soy Celia, una apasionada del desarrollo web con muchas ganas de seguir aprendiendo y creciendo en este mundo tan creativo. Me encanta descubrir nuevas tecnologías y enfrentarme a retos que me saquen de mi zona de confort. Ahora mismo estoy formándome para ser desarrolladora Full Stack, y cada día me esfuerzo por mejorar un poquito más. Aquí te muestro algunas de las herramientas con las que ya me siento bastante cómoda 💻✨</p>
-    </div>
-  </div>
-    <div class="tecnologias">
-      <h3 class="tituloconfondo">Tecnologías que manejo:</h3>
-      <div class="categorias-grid">
-      <div class="categoria">
-        <h4>Lenguajes de programación</h4>
-        <div class="tecnologia-lista">
-          <div class="tecnologia">
-            <img src="assets/java.jpg" alt="Java" />
-            <p>Java</p>
-          </div>
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="Python" />
-            <p>Python</p>
-          </div>
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript" />
-            <p>JavaScript</p>
-          </div>
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/typescript.png" alt="TypeScript" />
-            <p>TypeScript</p>
-          </div>
+  </section>
+  
+
+  <section id="sobremi" class="fade-in">
+    <div class="container fade-in">
+      <div class="sobre-mi-contenido fade-in">
+        <div class="imagen-sobremi fade-in">
+          <img src="assets/imagensobremi.webp" alt="Foto de Celia" />
         </div>
-      </div>   
-      <div class="categoria">
-        <h4>Lenguajes de marcado y estilo</h4>
-        <div class="tecnologia-lista">
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML" />
-            <p>HTML</p>
-          </div>
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS" />
-            <p>CSS</p>
-          </div>
-        </div>
-      </div>    
-      <div class="categoria">
-        <h4>Frameworks y librerías</h4>
-        <div class="tecnologia-lista">
-          <div class="tecnologia">
-            <img src="assets/node.png" alt="Node.js" />
-            <p>Node.js</p>
-          </div>
-          <div class="tecnologia">
-            <img src="assets/react.jpg" alt="React.js" />
-            <p>React.js</p>
-          </div>
-          <div class="tecnologia">
-            <img src="assets/angular.jpg" alt="Angular" />
-            <p>Angular</p>
-          </div>
-          <div class="tecnologia">
-            <img src="assets/tailwind.png" alt="TailwindCSS" />
-            <p>TailwindCSS</p>
-          </div>
-        </div>
-      </div>   
-      <div class="categoria">
-        <h4>Bases de datos</h4>
-        <div class="tecnologia-lista">
-          <div class="tecnologia">
-            <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="SQL" />
-            <p>SQL</p>
-          </div>
-          <div class="tecnologia">
-            <img src="assets/oracle.png" alt="Oracle" />
-            <p>Oracle</p>
-          </div>
-          <div class="tecnologia">
-            <img src="assets/mongo.png" alt="MongoDB" />
-            <p>MongoDB</p>
-          </div>
+        <div class="bio fade-in">
+          <h2 class="tituloconfondo">Sobre mí</h2>
+          <p class="descripcion">¡Hola! Soy Celia, una apasionada del desarrollo web con muchas ganas de seguir aprendiendo y creciendo en este mundo tan creativo. Me encanta descubrir nuevas tecnologías y enfrentarme a retos que me saquen de mi zona de confort. Ahora mismo estoy formándome para ser desarrolladora Full Stack, y cada día me esfuerzo por mejorar un poquito más. Aquí te muestro algunas de las herramientas con las que ya me siento bastante cómoda 💻✨</p>
         </div>
       </div>
-    </div>  
-  </div>
-    <div class="redes-sociales">
-      <h2>Redes sociales</h2>
-      <div class="redes">
-        <a href="https://www.linkedin.com/in/celia-urcola-rosel-16a095171/" target="_blank">
-          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/Eyra0405" target="_blank">
-          <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
-        </a>
-
+      <div class="tecnologias fade-in">
+        <h3 class="tituloconfondo">Tecnologías que manejo:</h3>
+        <div class="categorias-grid fade-in">
+          <div class="categoria fade-in">
+            <h4>Lenguajes de programación</h4>
+            <div class="tecnologia-lista fade-in">
+              <div class="tecnologia fade-in">
+                <img src="assets/java.jpg" alt="Java" />
+                <p>Java</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/python.png" alt="Python" />
+                <p>Python</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png" alt="JavaScript" />
+                <p>JavaScript</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/typescript.png" alt="TypeScript" />
+                <p>TypeScript</p>
+              </div>
+            </div>
+          </div>   
+          <div class="categoria fade-in">
+            <h4>Lenguajes de marcado y estilo</h4>
+            <div class="tecnologia-lista fade-in">
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML" />
+                <p>HTML</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS" />
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>    
+          <div class="categoria fade-in">
+            <h4>Frameworks y librerías</h4>
+            <div class="tecnologia-lista fade-in">
+              <div class="tecnologia fade-in">
+                <img src="assets/node.png" alt="Node.js" />
+                <p>Node.js</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="assets/react.jpg" alt="React.js" />
+                <p>React.js</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="assets/angular.jpg" alt="Angular" />
+                <p>Angular</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="assets/tailwind.png" alt="TailwindCSS" />
+                <p>TailwindCSS</p>
+              </div>
+            </div>
+          </div>   
+          <div class="categoria fade-in">
+            <h4>Bases de datos</h4>
+            <div class="tecnologia-lista fade-in">
+              <div class="tecnologia fade-in">
+                <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" alt="SQL" />
+                <p>SQL</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="assets/oracle.png" alt="Oracle" />
+                <p>Oracle</p>
+              </div>
+              <div class="tecnologia fade-in">
+                <img src="assets/mongo.png" alt="MongoDB" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
-    </div>
-  </div>  
-</section>
-<section id="proyectos">
-  <div class="titulo-proyectos-contenedor">
-    <h2 class="titulo">Proyectos</h2>
-    <div class="imagenproyectos">
-      <img src="assets/imagenproyectos.webp" alt="Imagen decorativa sobre mí" />
-    </div>
-  </div>
 
-  <div class="proyectos-container">
-    <div class="proyecto1">
-      <img src="assets/ApiJira.PNG" alt="Proyecto 1" class="webTickets" />
-      <h3>webTickets con API Jira</h3>
-      <p> Una interfaz grafica para visualizar los tickets recibidos en X proyecto
-        de Jira. Permite filtrar por estado, prioridad y tipo de ticket.
-      </p>
-      <a href="https://github.com/Eyra0405/webtickets" target="_blank" class="botonrepo">Ver repositorio</a>
-    </div>
-    <div class="proyecto2">
-      <img src="assets/musicPlayer.PNG" alt="Proyecto 2" class="musicPlayer" />
-      <h3>Reproductor de Musica</h3>
-      <p>Está en proceso ya que le estoy añadiendo una API de youtube,
-        ademas la interfaz de este proyecto cambiara en breve.
-      </p>
-      <a href="https://github.com/Eyra0405/musicPlayer" target="_blank" class="botonrepo">Ver repositorio</a>
-    </div>
-  </div>
-</section>
-
-<section id="contacto">
-  <div class="contacto-wrapper">
-    <div class="imagen-contacto">
-      <img src="assets/imagencontacto.webp" alt="Foto de Celia" />
-    </div>
-    <div class="contacto-contenido">
-      <h2 class="tituloconfondo">Contacto</h2>
-      <p>Si quieres ponerte en contacto conmigo, no dudes en 
-enviarme un correo electrónico. Estoy abierta a nuevas oportunidades y colaboraciones. ¡Espero saber de ti pronto!</p>
-      </p>
-      <a href="mailto:urcolarosel2002@gmail.com?subject=Contacto desde la web&body=Hola, quería ponerme en contacto contigo..." class="botonMail">
-        Enviar correo
-      </a>
-    </div>
-  </div>
-</section>
-
-    <footer>
-      <div class="redes-sociales">
-        <div class="redes">
+      <div class="redes-sociales fade-in">
+        <h2>Redes sociales</h2>
+        <div class="redes fade-in">
           <a href="https://www.linkedin.com/in/celia-urcola-rosel-16a095171/" target="_blank">
             <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
           </a>
@@ -213,8 +159,61 @@ enviarme un correo electrónico. Estoy abierta a nuevas oportunidades y colabora
           </a>
         </div>
       </div>
-    </footer>
-    
+    </div>  
+  </section>
+
+  <section id="proyectos" class="fade-in">
+    <div class="titulo-proyectos-contenedor fade-in">
+      <h2 class="titulo fade-in">Proyectos</h2>
+      <div class="imagenproyectos fade-in">
+        <img src="assets/imagenproyectos.webp" alt="Imagen decorativa sobre mí" />
+      </div>
+    </div>
+
+    <div class="proyectos-container fade-in">
+      <div class="proyecto1 fade-in">
+        <img src="assets/ApiJira.PNG" alt="Proyecto 1" class="webTickets" />
+        <h3>webTickets con API Jira</h3>
+        <p> Una interfaz grafica para visualizar los tickets recibidos en X proyecto de Jira. Permite filtrar por estado, prioridad y tipo de ticket.</p>
+        <a href="https://github.com/Eyra0405/webtickets" target="_blank" class="botonrepo">Ver repositorio</a>
+      </div>
+      <div class="proyecto2 fade-in">
+        <img src="assets/musicPlayer.PNG" alt="Proyecto 2" class="musicPlayer" />
+        <h3>Reproductor de Musica</h3>
+        <p>Está en proceso ya que le estoy añadiendo una API de youtube, ademas la interfaz de este proyecto cambiara en breve.</p>
+        <a href="https://github.com/Eyra0405/musicPlayer" target="_blank" class="botonrepo">Ver repositorio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="fade-in">
+    <div class="contacto-wrapper fade-in">
+      <div class="imagen-contacto fade-in">
+        <img src="assets/imagencontacto.webp" alt="Foto de Celia" />
+      </div>
+      <div class="contacto-contenido fade-in">
+        <h2 class="tituloconfondo">Contacto</h2>
+        <p>Si quieres ponerte en contacto conmigo, no dudes en enviarme un correo electrónico. Estoy abierta a nuevas oportunidades y colaboraciones. ¡Espero saber de ti pronto!</p>
+        <a href="mailto:urcolarosel2002@gmail.com?subject=Contacto desde la web&body=Hola, quería ponerme en contacto contigo..." class="botonMail">
+          Enviar correo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <div class="redes-sociales fade-in">
+      <div class="redes fade-in">
+        <a href="https://www.linkedin.com/in/celia-urcola-rosel-16a095171/" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Eyra0405" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  
 <script src="script.js"></script>
 </body>
 </html>

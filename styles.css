@@ -9,4 +9,15 @@ body {
     background-color: #1a1919;
     color: #fff; 
   }
+  .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   
