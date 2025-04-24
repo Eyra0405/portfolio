@@ -88,11 +88,11 @@
     transform: scale(1.03);
   }
   .imagenproyectos img {
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px; /* Ajusta según tu diseño */
+    height: auto;
     border-radius: 20px;
-    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Mantiene proporciones sin deformar */
   }
   
   .imagenproyectos img:hover {

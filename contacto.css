@@ -21,8 +21,10 @@
 
 .imagen-contacto img {
   width: 100%;
+  max-width: 300px; /* Ajusta según tu diseño */
+  height: auto;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
 }
 
 .imagen-contacto img:hover {
