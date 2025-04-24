@@ -1,0 +1,160 @@
+#sobre-mi {
+    padding: 50px 20px;
+    background-color: #000000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  #sobre-mi .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .bio h2 {
+    font-size: 36px;
+  
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 200px;
+  }
+  
+  .bio p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #ffffff;
+    font-size: 1rem;
+    max-width: 600px;
+    margin-right: 200px;
+  }
+  .descripcion {
+    background-color: #8B0000;
+    backface-visibility: 100% ;
+    padding: 5px 15px;
+    border-radius: 15px;
+    
+  }
+  .categoria:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #8B0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, auto);   /* 2 filas automáticas */
+    gap: 40px;
+    padding: 20px;
+  }
+  .categorias-grid .categoria {
+    background-color: #000000; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #8B0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tecnologias {
+    text-align: center;
+  }
+  
+  .tecnologias h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: #8B0000;
+    border-radius: 5px;
+  }
+  
+  .tecnologia-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .categoria h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;  /* hace que el texto se vea más nítido */
+    color: #ffffff; /* gris oscuro, más suave que el negro */
+    margin-bottom: 0.8rem;
+    background-color:#8B0000;
+    border-radius: 5px;
+   
+  }
+  .tecnologia {
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .tecnologia:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #8B0000;
+    border-radius: 10px;
+  }
+  
+  .tecnologia img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1); 
+  }
+  
+  .redes-sociales {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .redes-sociales h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .redes a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+    filter: invert(1); 
+  }
+  
+  .redes a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .sobre-mi-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .imagen-sobremi img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+    margin-left: 100px;
+  }
+  .botonCV {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #8B0000; 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
+  .botonCV:hover {
+    background-color: #8B0000;
+    transform: scale(1.05);
+  }
