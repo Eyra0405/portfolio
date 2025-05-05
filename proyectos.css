@@ -59,7 +59,7 @@
   }
 
  
-  .proyecto1, .proyecto2 {
+  .proyecto1, .proyecto2, .proyecto3 {
     width: 320px;
     background-color: #000000;
     border-radius: 20px;
@@ -72,11 +72,11 @@
     align-items: center;
   }
   
-  .proyecto1:hover, .proyecto2:hover {
+  .proyecto1:hover, .proyecto2:hover, .proyecto3:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   }
-  .proyecto1 img, .proyecto2 img {
+  .proyecto1 img, .proyecto2 img, .proyecto3 img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -84,7 +84,7 @@
     transition: transform 0.3s ease;
   }
   
-  .proyecto1:hover img, .proyecto2:hover img {
+  .proyecto1:hover img, .proyecto2:hover img, .proyecto3:hover img {
     transform: scale(1.03);
   }
   .imagenproyectos img {
